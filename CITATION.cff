@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Römer
+    given-names: Johann
+    affiliation: "MOR Research Collective"
+title: "coral-reef-utac"
+version: "1.0.0"
+date-released: "2026-08-24"
+url: "https://github.com/GenesisAeon/coral-reef-utac"
+repository-code: "https://github.com/GenesisAeon/coral-reef-utac"
+license: MIT
+abstract: "NOAA Coral Reef Watch's real, official Degree Heating Week (DHW) coral-bleaching threshold system (0-20C-weeks, 5 alert levels), the real escalating series of four documented global bleaching events (Hughes et al. 2017/2018, NOAA 2024: 21% -> 37% -> 68% -> 83.7% of reef area affected), a real thermal-acidification synergy (Guillermic et al. 2021: heat disables corals' acidification-coping mechanism), and Walker et al. 2023 (the honesty check: bleaching resistance varies by genotype with real fitness tradeoffs). Deliberately no UTAC/CREP/AFET bridge and no invented Gamma value -- see DISCLAIMER.md. GenesisAeon P114."
+keywords:
+  - GenesisAeon
+  - P114
+  - climate
+  - coral-reef
+  - ocean
+  - bleaching
+  - open-science
+references:
+  - type: article
+    title: "Global warming and recurrent mass bleaching of corals"
+    authors:
+      - name: "Hughes, T.P."
+      - name: "Kerry, J.T."
+      - name: "Alvarez-Noriega, M."
+    year: 2017
+    journal: "Nature"
+    volume: 543
+    start: 373
+    doi: "10.1038/nature21707"
+  - type: article
+    title: "Spatial and temporal patterns of mass bleaching of corals in the Anthropocene"
+    authors:
+      - name: "Hughes, T.P."
+      - name: "Anderson, K.D."
+      - name: "Connolly, S.R."
+    year: 2018
+    journal: "Science"
+    volume: 359
+    issue: 6371
+    start: 80
+    doi: "10.1126/science.aan8048"
+  - type: article
+    title: "Thermal stress reduces pocilloporid coral resilience to ocean acidification by impairing control over calcifying fluid chemistry"
+    authors:
+      - name: "Guillermic, M."
+    year: 2021
+    journal: "Science Advances"
+    volume: 7
+    issue: 2
+    doi: "10.1126/sciadv.aba9958"
+  - type: article
+    title: "Coral bleaching resistance variation is linked to differential mortality and skeletal growth during recovery"
+    authors:
+      - name: "Walker, N.S."
+      - name: "Nestor, V."
+      - name: "Golbuu, Y."
+      - name: "Palumbi, S.R."
+    year: 2023
+    journal: "Evolutionary Applications"
+    volume: 16
+    issue: 3
+    start: 755
+    doi: "10.1111/eva.13500"
