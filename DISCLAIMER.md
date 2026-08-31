@@ -1,5 +1,16 @@
 # DISCLAIMER — Real Science, No Invented Bridge Constant, Includes a Complication
 
+> **Why no UTAC/CREP/AFET bridge:** not only because the cited literature
+> already provides the necessary quantitative structure -- a deliberate
+> choice. This project's highly speculative AFET/UTAC experiments must
+> never stand in the way of climate/ecology topics being accessible and
+> usable to people who don't work inside that construct and aren't
+> looking for renormalization groups. Real, checkable science, without
+> the burden of an unproven framework. See `PACKAGE_REGISTRY.md`'s "Why
+> no UTAC/CREP/AFET bridge in the climate/ecology series" (2026-08-31) in
+> the GenesisAeon workspace root for the full canonical note.
+
+
 **Status: Real, independently verified science, built after rejecting
 an external session's unverified numeric claims about the same topic.
 NO UTAC/CREP/AFET bridge, NO invented Γ value.**
