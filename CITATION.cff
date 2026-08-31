@@ -6,8 +6,8 @@ authors:
     given-names: Johann
     affiliation: "MOR Research Collective"
 title: "coral-reef-utac"
-version: "1.0.0"
-date-released: "2026-08-24"
+version: "1.0.1"
+date-released: "2026-08-31"
 url: "https://github.com/GenesisAeon/coral-reef-utac"
 repository-code: "https://github.com/GenesisAeon/coral-reef-utac"
 license: MIT

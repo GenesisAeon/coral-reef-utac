@@ -6,6 +6,9 @@ real, escalating series of four documented global bleaching events.
 **Deliberately has no UTAC/CREP/AFET bridge and no invented Γ value**
 — see [DISCLAIMER.md](DISCLAIMER.md) for why.
 
+For a plain-language explanation of the same topic (German, no jargon,
+written for general audiences), see [WHITEPAPER.md](WHITEPAPER.md).
+
 ## Where this package came from
 
 Chosen from a shortlist of 5 candidate gap-topics proposed via an

@@ -1,6 +1,6 @@
 [project]
 name = "coral-reef-utac"
-version = "1.0.0"
+version = "1.0.1"
 description = "NOAA Coral Reef Watch's real Degree Heating Week threshold system (Hughes et al. 2017/2018, NOAA 2024: escalating global bleaching events 21%->37%->68%->83.7% of reef area), real thermal-acidification synergy (Guillermic et al. 2021), and Walker et al. 2023 (the honesty check: bleaching resistance varies by genotype with real fitness tradeoffs), no UTAC/CREP bridge"
 readme = "README.md"
 license = { text = "MIT" }
