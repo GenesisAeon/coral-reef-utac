@@ -64,23 +64,27 @@ from .genotype_resilience_nuance import (
     resilience_depends_on_resistance_alone,
 )
 from .historical_escalation import (
+    CURRENT_EVENT_WATCH,
     GBR_2016_DETAIL,
     GCRMN_2025_EVENTS,
     GLOBAL_EVENTS,
     RETURN_INTERVAL_STUDY,
     GCRMN2025CoverLossSeries,
     GlobalBleachingEventSeries,
+    LiveElNinoWatchContext,
     ReturnIntervalStudy,
     ThirdEventGBRDetail,
+    is_a_fifth_global_bleaching_event_confirmed,
     is_recovery_window_independently_confirmed_narrow,
     is_recovery_window_sufficient_for_full_recovery,
     is_severity_monotonically_increasing,
     recovery_window_years,
 )
 
-__version__ = "1.1.0"
+__version__ = "1.2.0"
 
 __all__ = [
+    "CURRENT_EVENT_WATCH",
     "DHW_SYSTEM",
     "GBR_2016_DETAIL",
     "GCRMN_2025_CITATION",
@@ -100,6 +104,7 @@ __all__ = [
     "GCRMN2025CoverLossSeries",
     "GenotypeResilienceEvidence",
     "GlobalBleachingEventSeries",
+    "LiveElNinoWatchContext",
     "ReturnIntervalStudy",
     "ThermalAcidificationInteraction",
     "ThirdEventGBRDetail",
@@ -108,6 +113,7 @@ __all__ = [
     "can_corals_compensate_for_acidification_under_heat_stress",
     "consequence_for_alert_level",
     "does_heat_resistance_come_without_a_cost",
+    "is_a_fifth_global_bleaching_event_confirmed",
     "is_alert_scale_unchanged_since_the_1990s",
     "is_bleaching_response_uniform_across_genotypes",
     "is_recovery_window_independently_confirmed_narrow",

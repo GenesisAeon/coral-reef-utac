@@ -262,3 +262,25 @@ GCRMN_2025_NOTE = (
     "same shrinking-window mechanism, using a different underlying "
     "metric (cover loss, not heat-stress area exposure)."
 )
+
+# =====================================================================
+# Live current-event context (added 2026-09-03, context only) -- WMO
+# =====================================================================
+# WMO press release (2026-09-03): a live, exceptionally strong El Nino
+# event, Nino 3.4 index +2.2 to +2.6C above average, near-100%
+# probability of persisting through February 2027, peak expected end
+# of 2026. The 4th global bleaching event (NOAA_4GBE_PERIOD) already
+# ended April 2025, and this package's own is_severity_monotonically_
+# increasing() docstring is explicit that it makes no claim about a
+# future, undocumented fifth event. This new, exceptionally strong El
+# Nino is a real risk factor worth watching via NOAA Coral Reef Watch's
+# real-time DHW monitoring (already documented above) -- it is NOT
+# evidence of a confirmed fifth global bleaching event.
+WMO_2026_CITATION = (
+    "WMO (2026-09-03), \"El Nino set to become very strong, raising "
+    "risks of extreme weather into 2027\", "
+    "https://wmo.int/news/media-centre/el-nino-set-become-very-strong-"
+    "raising-risks-of-extreme-weather-2027"
+)
+WMO_2026_NINO34_ANOMALY_C_RANGE = (2.2, 2.6)
+WMO_2026_PEAK_EXPECTED = "end of 2026"

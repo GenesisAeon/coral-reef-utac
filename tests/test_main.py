@@ -1,6 +1,7 @@
 """Tests for coral-reef-utac."""
 
 from coral_reef_utac import (
+    CURRENT_EVENT_WATCH,
     DHW_SYSTEM,
     GBR_2016_DETAIL,
     GCRMN_2025_CITATION,
@@ -16,6 +17,7 @@ from coral_reef_utac import (
     can_corals_compensate_for_acidification_under_heat_stress,
     consequence_for_alert_level,
     does_heat_resistance_come_without_a_cost,
+    is_a_fifth_global_bleaching_event_confirmed,
     is_alert_scale_unchanged_since_the_1990s,
     is_bleaching_response_uniform_across_genotypes,
     is_recovery_window_independently_confirmed_narrow,
@@ -27,7 +29,7 @@ from coral_reef_utac import (
 
 
 def test_version():
-    assert __version__ == "1.1.0"
+    assert __version__ == "1.2.0"
 
 
 def test_package_id():
@@ -181,3 +183,10 @@ def test_nuance_does_not_contradict_the_core_findings():
     assert is_recovery_window_sufficient_for_full_recovery() is False
     assert is_bleaching_response_uniform_across_genotypes() is False
     assert can_corals_compensate_for_acidification_under_heat_stress() is False
+
+
+def test_current_event_watch_context():
+    assert CURRENT_EVENT_WATCH.nino34_anomaly_c_range == (2.2, 2.6)
+    assert CURRENT_EVENT_WATCH.peak_expected == "end of 2026"
+    assert "wmo.int" in CURRENT_EVENT_WATCH.citation
+    assert is_a_fifth_global_bleaching_event_confirmed() is False

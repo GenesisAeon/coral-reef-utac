@@ -24,6 +24,9 @@ from .constants import (
     NOAA_4GBE_CITATION,
     NOAA_4GBE_NOTE,
     NOAA_4GBE_PERIOD,
+    WMO_2026_CITATION,
+    WMO_2026_NINO34_ANOMALY_C_RANGE,
+    WMO_2026_PEAK_EXPECTED,
 )
 
 
@@ -149,3 +152,30 @@ def is_recovery_window_independently_confirmed_narrow() -> bool:
 
 CITATION = NOAA_4GBE_CITATION
 NOTE = NOAA_4GBE_NOTE
+
+
+@dataclass(frozen=True)
+class LiveElNinoWatchContext:
+    """WMO's 2026-09-03 real-time monitoring of the current, exceptionally
+    strong El Nino event -- a real risk factor to watch, not a claim of a
+    confirmed fifth global bleaching event (the 4th ended April 2025)."""
+
+    nino34_anomaly_c_range: tuple[float, float] = WMO_2026_NINO34_ANOMALY_C_RANGE
+    peak_expected: str = WMO_2026_PEAK_EXPECTED
+    citation: str = WMO_2026_CITATION
+
+
+CURRENT_EVENT_WATCH = LiveElNinoWatchContext()
+
+
+def is_a_fifth_global_bleaching_event_confirmed() -> bool:
+    """Whether a fifth global coral bleaching event has been confirmed.
+
+    Always False -- the live 2026-2027 El Nino is a real, exceptionally
+    strong event worth watching (see CURRENT_EVENT_WATCH), but this
+    package has no NOAA/ICRI confirmation of a fifth global bleaching
+    event. is_severity_monotonically_increasing() above is explicit
+    that it makes no claim about undocumented future events -- this
+    function makes that same point for the live 2026 event specifically.
+    """
+    return False
