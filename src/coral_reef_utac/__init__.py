@@ -23,6 +23,14 @@ and carries real fitness tradeoffs -- a DHW threshold crossing does not
 mean uniform bleaching or uniform mortality across a reef.
 
 All citations independently verified 2026-08-24.
+
+Updated 2026-09-02: added the GCRMN & ICRI "Status of Coral Reefs of the
+World: 2025" report (21.1M observations, 87,299 surveys, 36,886 sites,
+124 countries/territories) -- an independent, much larger and more
+recent confirmation that the recovery window between severe bleaching
+events (now 5-6 years, historically decades) has converged with Hughes
+et al. 2018's earlier 6-year median estimate. See
+`is_recovery_window_independently_confirmed_narrow()`.
 """
 
 from .bleaching_threshold_system import (
@@ -39,6 +47,7 @@ from .combined_stressor_interaction import (
     can_corals_compensate_for_acidification_under_heat_stress,
 )
 from .constants import (
+    GCRMN_2025_CITATION,
     HUGHES_2017_CITATION,
     HUGHES_2018_CITATION,
     NOAA_4GBE_CITATION,
@@ -56,21 +65,26 @@ from .genotype_resilience_nuance import (
 )
 from .historical_escalation import (
     GBR_2016_DETAIL,
+    GCRMN_2025_EVENTS,
     GLOBAL_EVENTS,
     RETURN_INTERVAL_STUDY,
+    GCRMN2025CoverLossSeries,
     GlobalBleachingEventSeries,
     ReturnIntervalStudy,
     ThirdEventGBRDetail,
+    is_recovery_window_independently_confirmed_narrow,
     is_recovery_window_sufficient_for_full_recovery,
     is_severity_monotonically_increasing,
     recovery_window_years,
 )
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
 
 __all__ = [
     "DHW_SYSTEM",
     "GBR_2016_DETAIL",
+    "GCRMN_2025_CITATION",
+    "GCRMN_2025_EVENTS",
     "GLOBAL_EVENTS",
     "HEAT_BREAKS_ACIDIFICATION_COPING",
     "HUGHES_2017_CITATION",
@@ -83,6 +97,7 @@ __all__ = [
     "THERMAL_ACIDIFICATION_CITATION",
     "WALKER_2023_CITATION",
     "DegreeHeatingWeekSystem",
+    "GCRMN2025CoverLossSeries",
     "GenotypeResilienceEvidence",
     "GlobalBleachingEventSeries",
     "ReturnIntervalStudy",
@@ -95,6 +110,7 @@ __all__ = [
     "does_heat_resistance_come_without_a_cost",
     "is_alert_scale_unchanged_since_the_1990s",
     "is_bleaching_response_uniform_across_genotypes",
+    "is_recovery_window_independently_confirmed_narrow",
     "is_recovery_window_sufficient_for_full_recovery",
     "is_severity_monotonically_increasing",
     "recovery_window_years",

@@ -61,6 +61,26 @@ crossing does not mean uniform bleaching or uniform mortality.
   resistance in *Acropora hyacinthus* (Palau), with real fitness costs
   for resistant genotypes.
 
+## Independent confirmation (added 2026-09-02)
+
+The **GCRMN & ICRI "Status of Coral Reefs of the World: 2025"** report
+(released 2026-08-31; DOI: [10.59387/LFPR6347](https://doi.org/10.59387/LFPR6347)),
+based on 21.1 million observations across 36,886 sites in 124
+countries/territories — a far larger and more recent dataset than
+Hughes et al. (2018) above — independently confirms the shrinking
+recovery window: global mean hard coral cover fell 9.5% relative to the
+1980–2009 baseline (30.2% → 27.3%), via four cover-loss events (6.5% /
+9.9% / 6.6% / 8.9%, 1998–2024). Recovery is real when reefs get enough
+time (+6% cover, 2017–2019) — but that time has compressed to **5–6
+years**, converging almost exactly with Hughes 2018's independently
+measured 6-year median. As lead author Dr. Manuel González Rivero put
+it: *"Coral reefs once had decades to recover after major bleaching
+events. Today, they're lucky to get five or six years."*
+`is_recovery_window_independently_confirmed_narrow()` checks this
+convergence directly. This is a different metric (cover loss) than the
+NOAA/Hughes reef-area-affected series above — complementary evidence,
+not a duplicate.
+
 ## Quickstart
 
 ```bash

@@ -58,6 +58,26 @@ sie wachsen in der Erholungsphase langsamer. Eine überschrittene
 DHW-Warnschwelle bedeutet also nicht automatisch, dass alle Korallen an
 einem Riff gleich stark bleichen oder absterben.
 
+## Unabhängige Bestätigung (Ergänzung 2026-09-02)
+
+Der neue Bericht "Status of Coral Reefs of the World: 2025" (Global
+Coral Reef Monitoring Network / International Coral Reef Initiative,
+31.08.2026) bestätigt das Bild unabhängig, mit einer deutlich größeren
+Datenbasis: 21,1 Millionen Beobachtungen an 36.886 Riffstandorten in
+124 Ländern. Ergebnis: die weltweite Korallenbedeckung ist seit dem
+Basiswert 1980-2009 um 9,5 Prozent gesunken (von 30,2 auf 27,3
+Prozent), über vier Bedeckungsverlust-Ereignisse (6,5% / 9,9% / 6,6% /
+8,9%). Erholung ist real möglich, wenn genug Zeit bleibt (+6% Bedeckung
+zwischen 2017 und 2019) -- aber genau diese Zeit ist geschrumpft, auf
+inzwischen nur noch 5-6 Jahre. Leitautor Dr. Manuel González Rivero
+(Australian Institute of Marine Science) dazu wörtlich: *"Korallenriffe
+hatten früher Jahrzehnte Zeit, sich nach großen Bleiche-Ereignissen zu
+erholen. Heute haben sie Glück, wenn sie fünf oder sechs Jahre
+bekommen."* Das deckt sich fast exakt mit dem oben genannten,
+unabhängig ermittelten Sechs-Jahres-Median aus der 100-Standorte-Studie
+-- zwei verschiedene Studien, verschiedene Methoden, weitgehend
+unterschiedliche Zeiträume, dasselbe Ergebnis.
+
 ## Ein Hinweis zur Herkunft dieses Pakets
 
 Dieses Paket entstand, nachdem ein externer KI-Dialog mehrere konkrete,

@@ -204,3 +204,61 @@ WALKER_2023_NOTE = (
     "and that variation is exactly what real-world coral restoration "
     "and assisted-evolution programs try to leverage."
 )
+
+# =====================================================================
+# GCRMN 2025: independent, larger-scale confirmation of the shrinking
+# recovery window (added 2026-09-02)
+# =====================================================================
+# Johann flagged a Spektrum.de article on this report; verified directly
+# against the GCRMN's own release page (gcrmn.net) before adding. This is
+# a SEPARATE, much larger dataset (21.1 million observations, 87,299
+# surveys, 36,886 sites, 124 countries/territories, 1980-2024) than
+# Hughes et al. 2018's 100-site study above -- it measures a DIFFERENT
+# metric (percent of hard CORAL COVER LOST per event) than
+# GLOBAL_BLEACHING_EVENTS_REEF_AREA_AFFECTED_PCT above (percent of REEF
+# AREA exposed to bleaching-level heat stress), so the two series are
+# complementary, not duplicates, and should not be conflated. The two
+# independent recovery-window estimates DO agree: Hughes 2018's 6-year
+# median return interval (1980-2016 data) and GCRMN 2025's current
+# 5-6 year window (1980-2024 data, cross-checked below).
+
+GCRMN_2025_CITATION = (
+    "GCRMN & ICRI (2026). Status of Coral Reefs of the World: 2025. "
+    "Global Coral Reef Monitoring Network / International Coral Reef "
+    "Initiative. DOI: 10.59387/LFPR6347"
+)
+GCRMN_2025_DOI = "10.59387/LFPR6347"
+GCRMN_2025_RELEASE_DATE = "2026-08-31"
+
+GCRMN_2025_BASELINE_COVER_PCT = 30.2   # global mean hard coral cover, 1980-2009 baseline
+GCRMN_2025_CURRENT_COVER_PCT = 27.3    # global mean hard coral cover, as of 2024
+GCRMN_2025_GLOBAL_COVER_DECLINE_PCT = 9.5  # relative decline: (30.2-27.3)/30.2 * 100
+
+GCRMN_2025_EVENT_COVER_LOSS_PCT: dict[str, float] = {
+    "1998_1999": 6.5,
+    "2010_2011": 9.9,
+    "2016_2017": 6.6,
+    "2023_2024": 8.9,
+}
+GCRMN_2025_RECOVERY_2017_2019_PCT = 6.0  # real observed recovery: cover CAN rebound given time
+
+GCRMN_2025_RECOVERY_WINDOW_HISTORICAL_YEARS = "decades"
+GCRMN_2025_RECOVERY_WINDOW_CURRENT_YEARS: tuple[float, float] = (5.0, 6.0)
+
+GCRMN_2025_GONZALEZ_RIVERO_QUOTE = (
+    "Coral reefs once had decades to recover after major bleaching "
+    "events. Today, they're lucky to get five or six years. "
+    "-- Dr. Manuel Gonzalez Rivero (AIMS), lead author"
+)
+GCRMN_2025_NOTE = (
+    "The 2017-2019 recovery (+6% cover) is real evidence that recovery "
+    "IS mechanistically possible when reefs get enough time -- the "
+    "threat is not that corals can't recover, but that the interval "
+    "between severe events has compressed to roughly the same length "
+    "as the recovery process itself. This does not change "
+    "HUGHES_2018_MEDIAN_RETURN_INTERVAL_YEARS or "
+    "GLOBAL_BLEACHING_EVENTS_REEF_AREA_AFFECTED_PCT above -- it is an "
+    "independent, more recent, much larger-sample confirmation of the "
+    "same shrinking-window mechanism, using a different underlying "
+    "metric (cover loss, not heat-stress area exposure)."
+)

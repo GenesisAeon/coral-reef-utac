@@ -3,6 +3,8 @@
 from coral_reef_utac import (
     DHW_SYSTEM,
     GBR_2016_DETAIL,
+    GCRMN_2025_CITATION,
+    GCRMN_2025_EVENTS,
     GLOBAL_EVENTS,
     HEAT_BREAKS_ACIDIFICATION_COPING,
     PACKAGE_ID,
@@ -16,6 +18,7 @@ from coral_reef_utac import (
     does_heat_resistance_come_without_a_cost,
     is_alert_scale_unchanged_since_the_1990s,
     is_bleaching_response_uniform_across_genotypes,
+    is_recovery_window_independently_confirmed_narrow,
     is_recovery_window_sufficient_for_full_recovery,
     is_severity_monotonically_increasing,
     recovery_window_years,
@@ -24,7 +27,7 @@ from coral_reef_utac import (
 
 
 def test_version():
-    assert __version__ == "1.0.1"
+    assert __version__ == "1.1.0"
 
 
 def test_package_id():
@@ -142,6 +145,29 @@ def test_does_heat_resistance_come_without_a_cost_always_false():
 
 def test_resilience_depends_on_resistance_alone_always_false():
     assert resilience_depends_on_resistance_alone() is False
+
+
+# --- historical_escalation.py: GCRMN 2025 addition (2026-09-02) -------------
+
+
+def test_gcrmn_2025_events_values():
+    assert GCRMN_2025_EVENTS.event_cover_loss_pct == {
+        "1998_1999": 6.5,
+        "2010_2011": 9.9,
+        "2016_2017": 6.6,
+        "2023_2024": 8.9,
+    }
+    assert GCRMN_2025_EVENTS.global_cover_decline_pct == 9.5
+    assert GCRMN_2025_EVENTS.recovery_2017_2019_pct == 6.0
+    assert GCRMN_2025_EVENTS.current_recovery_window_years == (5.0, 6.0)
+    assert GCRMN_2025_EVENTS.citation == GCRMN_2025_CITATION
+
+
+def test_is_recovery_window_independently_confirmed_narrow_true():
+    # Hughes 2018's 6.0-year median falls inside GCRMN 2025's independently
+    # measured 5-6 year current window -- two different studies, different
+    # methods, different (largely non-overlapping) periods, converging.
+    assert is_recovery_window_independently_confirmed_narrow() is True
 
 
 def test_nuance_does_not_contradict_the_core_findings():

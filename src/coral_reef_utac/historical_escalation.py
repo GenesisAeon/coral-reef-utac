@@ -9,6 +9,11 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from .constants import (
+    GCRMN_2025_CITATION,
+    GCRMN_2025_EVENT_COVER_LOSS_PCT,
+    GCRMN_2025_GLOBAL_COVER_DECLINE_PCT,
+    GCRMN_2025_RECOVERY_2017_2019_PCT,
+    GCRMN_2025_RECOVERY_WINDOW_CURRENT_YEARS,
     GLOBAL_BLEACHING_EVENTS_REEF_AREA_AFFECTED_PCT,
     HUGHES_2017_CITATION,
     HUGHES_2017_GBR_2016_REEFS_AFFECTED_PCT,
@@ -99,6 +104,47 @@ def is_recovery_window_sufficient_for_full_recovery() -> bool:
     fully recover before the next bleaching event.
     """
     return False
+
+
+@dataclass(frozen=True)
+class GCRMN2025CoverLossSeries:
+    """GCRMN (2026)'s independent, 21.1M-observation cover-loss series.
+
+    A different metric than GLOBAL_EVENTS above (percent of hard coral
+    COVER LOST per event, not percent of reef area exposed to
+    bleaching-level heat stress) -- complementary evidence, not a
+    duplicate of the NOAA/Hughes series.
+    """
+
+    event_cover_loss_pct: dict[str, float]
+    global_cover_decline_pct: float
+    recovery_2017_2019_pct: float
+    current_recovery_window_years: tuple[float, float]
+    citation: str
+
+
+GCRMN_2025_EVENTS = GCRMN2025CoverLossSeries(
+    event_cover_loss_pct=GCRMN_2025_EVENT_COVER_LOSS_PCT,
+    global_cover_decline_pct=GCRMN_2025_GLOBAL_COVER_DECLINE_PCT,
+    recovery_2017_2019_pct=GCRMN_2025_RECOVERY_2017_2019_PCT,
+    current_recovery_window_years=GCRMN_2025_RECOVERY_WINDOW_CURRENT_YEARS,
+    citation=GCRMN_2025_CITATION,
+)
+
+
+def is_recovery_window_independently_confirmed_narrow() -> bool:
+    """Whether two independent studies agree the recovery window is too narrow.
+
+    Hughes et al. 2018 (100 sites, 1980-2016): 6-year median return
+    interval. GCRMN 2025 (36,886 sites, 1980-2024, a much larger and
+    more recent sample): current window of 5-6 years. Two independently
+    conducted analyses, using different methods and largely
+    non-overlapping study periods, converge on essentially the same
+    number -- real convergent evidence, not a single study's estimate.
+    """
+    hughes = HUGHES_2018_MEDIAN_RETURN_INTERVAL_YEARS
+    gcrmn_low, gcrmn_high = GCRMN_2025_RECOVERY_WINDOW_CURRENT_YEARS
+    return gcrmn_low <= hughes <= gcrmn_high
 
 
 CITATION = NOAA_4GBE_CITATION
