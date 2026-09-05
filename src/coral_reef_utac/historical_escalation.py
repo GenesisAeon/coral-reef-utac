@@ -82,7 +82,7 @@ def is_severity_monotonically_increasing() -> bool:
     """Whether each documented global event affected more reef area than the last.
 
     True for the real, observed 1998 -> 2010 -> 2014-2017 -> 2023-2025
-    series (21% -> 37% -> 68% -> 83.7%). This module makes no claim
+    series (21% -> 37% -> 68% -> 84.4%). This module makes no claim
     about what happens in a future, undocumented fifth event.
     """
     values = list(GLOBAL_EVENTS.reef_area_affected_pct_by_event.values())
@@ -158,7 +158,7 @@ NOTE = NOAA_4GBE_NOTE
 class LiveElNinoWatchContext:
     """WMO's 2026-09-03 real-time monitoring of the current, exceptionally
     strong El Nino event -- a real risk factor to watch, not a claim of a
-    confirmed fifth global bleaching event (the 4th ended April 2025)."""
+    confirmed fifth global bleaching event (the 4th likely ended in 2025)."""
 
     nino34_anomaly_c_range: tuple[float, float] = WMO_2026_NINO34_ANOMALY_C_RANGE
     peak_expected: str = WMO_2026_PEAK_EXPECTED

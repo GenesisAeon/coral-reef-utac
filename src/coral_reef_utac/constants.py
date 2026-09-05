@@ -129,24 +129,34 @@ NOAA_4GBE_CITATION = (
     "NOAA (2024). NOAA Confirms 4th Global Coral Bleaching Event. "
     "https://www.noaa.gov/news-release/noaa-confirms-4th-global-coral-bleaching-event"
 )
+NOAA_4GBE_LIKELY_ENDED_CITATION = (
+    "NOAA/NESDIS (2026). World's Fourth Mass Coral Bleaching Event Likely "
+    "Ended in 2025. "
+    "https://www.nesdis.noaa.gov/news/worlds-fourth-mass-coral-bleaching-event-likely-ended-2025"
+)
 
 GLOBAL_BLEACHING_EVENTS_REEF_AREA_AFFECTED_PCT: dict[str, float] = {
     "1998_1st_event": 21.0,
     "2010_2nd_event": 37.0,
     "2014_2017_3rd_event": 68.0,
-    "2023_2025_4th_event": 83.7,
+    "2023_2025_4th_event": 84.4,
 }
-NOAA_4GBE_PERIOD = ("2023-01", "2025-04")
+NOAA_4GBE_PERIOD = ("2023-01", "2025-09")
+NOAA_4GBE_LIKELY_ENDED: bool = True  # per NOAA/NESDIS, likely concluded mid-2025
 NOAA_4GBE_NOTE = (
     "NOAA and the International Coral Reef Initiative confirmed a "
     "fourth global coral bleaching event: bleaching-level heat stress "
-    "affected 83.7% of the world's coral reef area between January "
-    "2023 and April 2025, across at least 83 countries and "
-    "territories -- a real, escalating series across all four "
-    "documented global events (21% -> 37% -> 68% -> 83.7%). This is "
-    "the observed area-affected trend, not a claim that bleaching "
-    "equals uniform mortality -- see the genotype-resilience nuance "
-    "module for why."
+    "affected 84.4% of the world's coral reef area between January "
+    "2023 and September 2025 (updated from an earlier 83.7% figure "
+    "covering through April 2025 -- the event continued and grew "
+    "before NOAA/NESDIS assessed it as likely ended in 2025), across "
+    "at least 83 countries and territories -- a real, escalating "
+    "series across all four documented global events (21% -> 37% -> "
+    "68% -> 84.4%), the largest on record, surpassing the third "
+    "event's 68%. This is the observed area-affected trend (bleaching-"
+    "level heat stress exposure), not a claim that bleaching equals "
+    "uniform mortality -- see the genotype-resilience nuance module "
+    "for why."
 )
 
 # =====================================================================

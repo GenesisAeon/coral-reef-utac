@@ -49,9 +49,9 @@ crossing does not mean uniform bleaching or uniform mortality.
   bleaching events at a given reef has fallen to just 6 years — too
   short for many coral communities to fully recover.
 - **NOAA (2024)** — confirmed the fourth global bleaching event:
-  83.7% of the world's reef area affected, Jan 2023–Apr 2025. The full
+  84.4% of the world's reef area affected, Jan 2023–Sep 2025 (event likely ended 2025). The full
   documented series is real and monotonically escalating: 21% (1998)
-  → 37% (2010) → 68% (2014–2017) → 83.7% (2023–2025).
+  → 37% (2010) → 68% (2014–2017) → 84.4% (2023–2025).
 - **Guillermic et al. (2021, *Science Advances*)** — a real lab
   finding: corals can actively compensate for ocean acidification at
   normal temperature (28°C), but heat stress (31°C) disables that
@@ -97,7 +97,7 @@ from coral_reef_utac import (
 
 print(alert_level_for_dhw(9.5))                 # 2
 print(consequence_for_alert_level(2))
-print(list(GLOBAL_EVENTS.reef_area_affected_pct_by_event.values()))  # [21.0, 37.0, 68.0, 83.7]
+print(list(GLOBAL_EVENTS.reef_area_affected_pct_by_event.values()))  # [21.0, 37.0, 68.0, 84.4]
 print(is_severity_monotonically_increasing())    # True
 print(recovery_window_years())                   # 6.0
 print(can_corals_compensate_for_acidification_under_heat_stress())  # False

@@ -82,8 +82,8 @@ def test_is_alert_scale_unchanged_since_the_1990s_always_false():
 
 def test_global_events_series_values():
     values = list(GLOBAL_EVENTS.reef_area_affected_pct_by_event.values())
-    assert values == [21.0, 37.0, 68.0, 83.7]
-    assert GLOBAL_EVENTS.fourth_event_period == ("2023-01", "2025-04")
+    assert values == [21.0, 37.0, 68.0, 84.4]
+    assert GLOBAL_EVENTS.fourth_event_period == ("2023-01", "2025-09")
     assert GLOBAL_EVENTS.citation
 
 

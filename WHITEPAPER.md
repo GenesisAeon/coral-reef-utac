@@ -31,7 +31,7 @@ Hitzebelastung des Jahres 2023 das ursprünglich vorgesehene Maß
 Bislang wurden vier globale Korallenbleiche-Ereignisse offiziell
 dokumentiert, und der Anteil der betroffenen weltweiten Rifffläche
 steigt dabei durchgehend an: 21 Prozent (1998), 37 Prozent (2010), 68
-Prozent (2014-2017), 83,7 Prozent (2023-2025). Beim dritten Ereignis
+Prozent (2014-2017), 84,4 Prozent (2023-2025). Beim dritten Ereignis
 (2015-2016) waren 91 Prozent der einzelnen Riffe des Great-Barrier-Reef
 betroffen. Eine große Analyse von 100 Riff-Standorten weltweit (1980-2016)
 zeigt zusätzlich: der mittlere Abstand zwischen schweren

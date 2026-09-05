@@ -12,7 +12,7 @@ DISCLAIMER.md. Built from scratch with independently verified citations.
 Documents NOAA Coral Reef Watch's real, official Degree Heating Week
 (DHW) heat-stress threshold system (0-20C-weeks, 5 alert levels),
 the real, escalating series of four documented global bleaching events
-(Hughes et al. 2017/2018, NOAA 2024: 21% -> 37% -> 68% -> 83.7% of reef
+(Hughes et al. 2017/2018, NOAA 2024: 21% -> 37% -> 68% -> 84.4% of reef
 area affected), and a real multi-stressor synergy (heat disables corals'
 acidification-coping mechanism, Guillermic et al. 2021). Deliberately no
 UTAC/CREP/AFET bridge and no invented Gamma value -- see DISCLAIMER.md.
